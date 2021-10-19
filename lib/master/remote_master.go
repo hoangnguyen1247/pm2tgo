@@ -6,8 +6,8 @@ import (
 	"net/rpc"
 	"time"
 
+	"github.com/hoangnguyen1247/pm2tgo/lib/process"
 	log "github.com/sirupsen/logrus"
-	"github.com/struCoder/pmgo/lib/process"
 )
 
 // RemoteMaster is a struct that holds the master instance.

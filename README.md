@@ -5,8 +5,8 @@
 <br/>
 <b>PMGO</b>
 <br/><br/>
-<a href="https://circleci.com/gh/struCoder/pmgo">
-<img src="https://circleci.com/gh/struCoder/pmgo.svg?&style=shield&circle-token=0fa8ccfc85928edc54a0d7d848cbc784e31813ff" alt="Build Status">
+<a href="https://circleci.com/gh/hoangnguyen1247/pm2tgo">
+<img src="https://circleci.com/gh/hoangnguyen1247/pm2tgo.svg?&style=shield&circle-token=0fa8ccfc85928edc54a0d7d848cbc784e31813ff" alt="Build Status">
 </a>
 
 <a href="http://commitizen.github.io/cz-cli">
@@ -17,12 +17,12 @@
   <img src="https://badges.gitter.im/getpmgo/Lobby.svg" alt="Join the chat" />
 </a>
 
-<a href="https://goreportcard.com/report/github.com/struCoder/pmgo">
-  <img src="https://goreportcard.com/badge/github.com/struCoder/pmgo" alt="Go Report Card" />
+<a href="https://goreportcard.com/report/github.com/hoangnguyen1247/pm2tgo">
+  <img src="https://goreportcard.com/badge/github.com/hoangnguyen1247/pm2tgo" alt="Go Report Card" />
 </a>
 
-<a href="https://godoc.org/github.com/struCoder/pmgo">
-  <img src="https://godoc.org/github.com/struCoder/pmgo?status.svg" alt="GoDoc" />
+<a href="https://godoc.org/github.com/hoangnguyen1247/pm2tgo">
+  <img src="https://godoc.org/github.com/hoangnguyen1247/pm2tgo?status.svg" alt="GoDoc" />
 </a>
 <br/><br/>
 </div>
@@ -41,14 +41,14 @@ PMGO is a lightweight process manager written in Golang for Golang applications.
 ## Install pmgo
 
 ```bash
-$ go get github.com/struCoder/pmgo
+$ go get github.com/hoangnguyen1247/pm2tgo
 $ mv $GOPATH/bin/pmgo /usr/local/bin
 ```
 
 Or
 ```bash
-git clone https://github.com/struCoder/pmgo.git
-cd path/to/struCoder/pmgo
+git clone https://github.com/hoangnguyen1247/pm2tgo.git
+cd path/to/hoangnguyen1247/pm2tgo
 go build -v pmgo.go
 mv pmgo /usr/local/bin
 ```
@@ -116,8 +116,8 @@ pmgo start /Users/strucoder/personalPro/goplace/main awesome_name true --args="a
 
 
 ### Contributors
-<a href="https://github.com/struCoder/pmgo/graphs/contributors">
-  <img src="https://contributors-img.web.app/image?repo=struCoder/pmgo" />
+<a href="https://github.com/hoangnguyen1247/pm2tgo/graphs/contributors">
+  <img src="https://contributors-img.web.app/image?repo=hoangnguyen1247/pm2tgo" />
 </a>
 
 ### Donate
@@ -130,4 +130,4 @@ pmgo start /Users/strucoder/personalPro/goplace/main awesome_name true --args="a
 In China Mainland, maybe you can't download some packages in golang.org, thus just click [here](https://goproxy.io/zh/) to set `GOPROXY`
 ### LICENSE
 
-[MIT](https://github.com/struCoder/pmgo/blob/master/LICENSE)
+[MIT](https://github.com/hoangnguyen1247/pm2tgo/blob/master/LICENSE)

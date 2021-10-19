@@ -26,8 +26,8 @@ package main
 import (
 	"sync"
 
-	"github.com/struCoder/pmgo/lib/cli"
-	"github.com/struCoder/pmgo/lib/master"
+	"github.com/hoangnguyen1247/pm2tgo/lib/cli"
+	"github.com/hoangnguyen1247/pm2tgo/lib/master"
 	"gopkg.in/alecthomas/kingpin.v2"
 
 	"github.com/sevlyar/go-daemon"

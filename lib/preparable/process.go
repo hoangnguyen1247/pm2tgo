@@ -7,9 +7,9 @@ import (
 	"path/filepath"
 	"strings"
 
+	"github.com/hoangnguyen1247/pm2tgo/lib/process"
+	"github.com/hoangnguyen1247/pm2tgo/lib/utils"
 	log "github.com/sirupsen/logrus"
-	"github.com/struCoder/pmgo/lib/process"
-	"github.com/struCoder/pmgo/lib/utils"
 )
 
 // ProcPreparable is a preparable with all the necessary informations to run

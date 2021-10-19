@@ -6,10 +6,10 @@ import (
 	"time"
 
 	"github.com/fatih/color"
+	"github.com/hoangnguyen1247/pm2tgo/lib/master"
+	"github.com/hoangnguyen1247/pm2tgo/lib/utils"
 	"github.com/olekukonko/tablewriter"
 	log "github.com/sirupsen/logrus"
-	"github.com/struCoder/pmgo/lib/master"
-	"github.com/struCoder/pmgo/lib/utils"
 )
 
 // Cli is the command line client.

@@ -1,4 +1,4 @@
-module github.com/struCoder/pmgo
+module github.com/hoangnguyen1247/pm2tgo
 
 go 1.13
 
