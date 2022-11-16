@@ -149,7 +149,7 @@ func isDaemonRunning(ctx *daemon.Context) (bool, *os.Process, error) {
 func getCtx() *daemon.Context {
 	if *serveConfigFile == "" {
 		folderPath := os.Getenv("HOME")
-		*serveConfigFile = folderPath + "/.pmgo/config.toml"
+		*serveConfigFile = folderPath + "/.pm2tgo/config.toml"
 		os.MkdirAll(path.Dir(*serveConfigFile), 0755)
 	}
 

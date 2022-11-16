@@ -3,7 +3,7 @@
 version="0.5.1"
 
 UNAME=$(uname)
-PROJECT_PATH="$GOPATH/src/github.com/struCoder"
+PROJECT_PATH="$GOPATH/src/github.com/hoangnguyen1247"
 OLD_PROJECT_PATH="$GOPATH/src/github.com/hoangnguyen1247/pm2tgo"
 BACKUP=false
 
