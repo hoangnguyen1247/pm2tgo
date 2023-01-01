@@ -3,7 +3,7 @@
    <img src="https://i.loli.net/2018/12/06/5c08b9a294c29.png">
 </a>
 <br/>
-<b>PMGO</b>
+<b>PM2TGO</b>
 <br/><br/>
 <a href="https://circleci.com/gh/hoangnguyen1247/pm2tgo">
 <img src="https://circleci.com/gh/hoangnguyen1247/pm2tgo.svg?&style=shield&circle-token=0fa8ccfc85928edc54a0d7d848cbc784e31813ff" alt="Build Status">
@@ -50,7 +50,7 @@ Or
 git clone https://github.com/hoangnguyen1247/pm2tgo.git
 cd path/to/hoangnguyen1247/pm2tgo
 go build -v pmgo.go
-mv pmgo /usr/local/bin
+mv pm2tgo /usr/local/bin
 ```
 
 
