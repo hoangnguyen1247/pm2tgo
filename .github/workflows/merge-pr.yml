@@ -21,9 +21,10 @@ jobs:
         node-version: [16.x]
 
     steps:
-    - uses: actions/checkout@v3
+    - name: Checkout
+      uses: actions/checkout@v3
 
-    - name: Set up Go
+    - name: Setup Go
       uses: actions/setup-go@v3
       with:
         go-version: 1.19
@@ -34,10 +35,12 @@ jobs:
     - name: Test
       run: go test -v ./...
 
-    - name: Deploy
-      uses: uses: actions/setup-node@v2
+    - name: Setup Node
+      uses: actions/setup-node@v2
       with:
         node-version: ${{ matrix.node-version }}
+
+    - name: Release
       env:
         GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
       run: npx semantic-release
