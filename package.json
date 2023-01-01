@@ -1,0 +1,45 @@
+{
+    "name": "pm2tgo",
+    "version": "1.0.0",
+    "description": "## Repository [Source code]()",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/hoangnguyen1247/pm2tgo.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/hoangnguyen1247/pm2tgo/issues"
+    },
+    "homepage": "https://github.com/hoangnguyen1247/pm2tgo#readme",
+    "devDependencies": {
+        "@commitlint/config-conventional": "^12.1.4",
+        "@semantic-release/exec": "^5.0.0",
+        "@semantic-release/github": "^8.0.2",
+        "commitlint": "^12.1.4",
+        "cross-env": "^7.0.3",
+        "husky": "^7.0.1",
+        "semantic-release": "^17.4.3"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "yarn lint && yarn test",
+            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+        }
+    },
+    "scripts": {
+        "start": "go run ./main.go",
+        "deps": "cross-env GO111MODULE=on go mod download",
+        "deps-get": "cross-env GO111MODULE=on go get",
+        "copy:env": "cp .env.lcl .env",
+        "lint": "golint ./...",
+        "fmt": "go fmt ./...",
+        "build": "go build -o ./out/pm2tgo main.go",
+        "release": "semantic-release",
+        "test": "go test ./...",
+        "test:cov": "go test -coverprofile cover.out ./...",
+        "test:cov-tools": "go tool cover -html=cover.out",
+        "go-coverage": "go-coverage -f cover.out"
+    }
+}
