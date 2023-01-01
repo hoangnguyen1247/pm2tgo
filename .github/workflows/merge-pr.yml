@@ -35,7 +35,7 @@ jobs:
       run: go test -v ./...
 
     - name: Deploy
-      uses: uses: actions/setup-node@v2
+      uses: actions/setup-node@v2
       with:
         node-version: ${{ matrix.node-version }}
       env:
