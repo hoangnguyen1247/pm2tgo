@@ -28,28 +28,22 @@
 </div>
 
 
-# PMGO 
-PMGO is a lightweight process manager written in Golang for Golang applications. It helps you keep your applications alive forever, reload and start them from the source code.
+# PM2TGO 
+PM2TGO is a lightweight process manager written in Golang for Golang applications. It helps you keep your applications alive forever, reload and start them from the source code.
 
 
-
-## Change log(2020-06-27 updated)
-
-[Change log](./changelog.md)
-
-
-## Install pmgo
+## Install pm2tgo
 
 ```bash
-$ go get github.com/hoangnguyen1247/pm2tgo
-$ mv $GOPATH/bin/pmgo /usr/local/bin
+$ go install github.com/hoangnguyen1247/pm2tgo@latest
+$ mv $GOPATH/bin/pm2tgo /usr/local/bin
 ```
 
 Or
 ```bash
 git clone https://github.com/hoangnguyen1247/pm2tgo.git
 cd path/to/hoangnguyen1247/pm2tgo
-go build -v pmgo.go
+go build -v pm2tgo.go
 mv pm2tgo /usr/local/bin
 ```
 
@@ -57,14 +51,14 @@ mv pm2tgo /usr/local/bin
 ## Starting a new application
 If it's the first time you are starting a new golang application, you need to tell pmgo to first build its binary. Then you need to first run:
 ```bash
-$ pmgo start path/to/source-directory app-name
+$ pm2tgo start path/to/source-directory app-name
 ```
 
 This will automatically compile, start and daemonize your application. If you need to later on, stop, restart or delete your app from PMGO, you can just run normal commands using the app-name you specified. Example:
 ```bash
-$ pmgo stop app-name
-$ pmgo restart app-name
-$ pmgo delete app-name
+$ pm2tgo stop app-name
+$ pm2tgo restart app-name
+$ pm2tgo delete app-name
 ```
 
 ## Main features
@@ -72,24 +66,24 @@ $ pmgo delete app-name
 ### Commands overview
 
 ```bash
-$ pmgo kill                                                  # kill pmgo daemon process
+$ pm2tgo kill                                                  # kill pm2tgo daemon process
 
-$ pmgo start source app-name                                 # Compile, start, daemonize and auto  restart application.
-$ pmgo restart app-name                                      # Restart a previously saved process
-$ pmgo stop app-name                                         # Stop application.
-$ pmgo delete app-name                                       # Delete application forever.
+$ pm2tgo start source app-name                                 # Compile, start, daemonize and auto  restart application.
+$ pm2tgo restart app-name                                      # Restart a previously saved process
+$ pm2tgo stop app-name                                         # Stop application.
+$ pm2tgo delete app-name                                       # Delete application forever.
 
-$ pmgo save                                                  # Save current process list
+$ pm2tgo save                                                  # Save current process list
 
-$ pmgo list                                                  # Display status for each app.
-$ pmgo info app-name                                         # describe importance parameters of a process name
+$ pm2tgo list                                                  # Display status for each app.
+$ pm2tgo info app-name                                         # describe importance parameters of a process name
 ```
 
 ### Start your GO-application with parameters
 ```bash
-// pmgo will build your source code folder under $GOPATH/src by default
+// pm2tgo will build your source code folder under $GOPATH/src by default
 // Here my tmp folder was: $GOPATH/src/tmp
-pmgo start tmp/ test --args "arg1 arg2 arg3"
+pm2tgo start tmp/ test --args "arg1 arg2 arg3"
 
 # In your application
 fmt.Println(os.Args[1:])
@@ -101,7 +95,7 @@ fmt.Println(os.Args[1:])
 
 ```bash
 # true means use user input compiled binary path
-pmgo start /Users/strucoder/personalPro/goplace/main awesome_name true --args="arg1 arg2 arg3"
+pm2tgo start /Users/strucoder/personalPro/goplace/main awesome_name true --args="arg1 arg2 arg3"
 ```
 
 ### Demo
@@ -124,7 +118,7 @@ pmgo start /Users/strucoder/personalPro/goplace/main awesome_name true --args="a
 
 |      **Paypal**       |        **Alipay**         |
 | :------------------------: | :------------------------: |
-| [![paypal](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/strucoder) | [![alipay](https://img.shields.io/badge/Donate-alipay-blue.svg)](https://i.loli.net/2018/11/29/5bff95e2d29df.png) |
+| [![paypal](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/hoangng1247) | [![not yet](https://img.shields.io/badge/Donate-alipay-blue.svg)]() |
 
 ### By The Way
 In China Mainland, maybe you can't download some packages in golang.org, thus just click [here](https://goproxy.io/zh/) to set `GOPROXY`
